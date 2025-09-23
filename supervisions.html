@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заказать выезд</title>
+</head>
+<body>
+	<header>
+	<img src="img/crop-tool_6642182.png" alt="logo" width="100px">
+	
+		<a id="main_menu_link_1" href="index.html"><p>Главная</p></a>
+		<a id="main_menu_link_2" href="-> services.html"><p>Услуги</p></a>
+		<a id="main_menu_link_3" href="works.html"><p>Наши работы</p></a>
+		<a id="main_menu_link_4" href="gallery.html"><p>Галерея</p></a>
+		<a id="main_menu_link_5" href="about.html"><p>О нас</p></a>
+		<a id="main_menu_link_6" href="contacte.html"><p>Контакты</p></a>
+	
+		<hr>
+	</header>
+	<main>
+
+		<h2><p>Авторский надзор</p></h2>
+
+		<form action="contacte.html" method="post">
+<ol type="1" start="9">
+	<li>
+		<input type="radio" id="departure_designner" name="supervisions" value="departure">
+		<label for="departure_designner">
+			<p>Выезд дизайнера на объект</p>
+		</label>
+	</li>
+	<li>
+		<input type="radio" id="controls_designner" name="supervisions" value="controls">
+		<label for="controls_designner">
+			<p>Проверка соответствия проведенных работ существующим планам</p>
+		</label>
+	</li>
+	<li>
+		<input type="radio" id="correction_designner" name="supervisions" value="correction">
+		<label for="correction_designner">
+			<p>Внесение корректировок в планы по согласованию с прорабом, строителями и мастерами</p>
+		</label>
+	</li>
+	<li>
+		<input type="radio" id="notify_designner" name="supervisions" value="notify">
+		<label for="notify_designner">
+			<p>Уведомление о ходе ремонта и консультации клиента</p>
+		</label>
+	</li>
+</ol>
+<hr>
+
+			<input type="number" min="1" max="5" name="number" placeholder="выберите сколько выездов">
+			<br><br>
+			<input type="date" name="date" id="departure_date">
+			<label for="departure_date">Выберите дату выездов</label>
+			<br><br>
+			<input type="time" name="time" id="departure_time">
+			<label for="departure_time">Выберите время выездов (+/- 1 час)</label>
+			<br><br>
+			<select name="village" id="departure_village">
+				<option value="">Вулканешты</option>
+				<option value="" selected>Кагул</option>
+				<option value="">Кантемир</option>
+				<option value="">Кишинев</option>
+				<option value="">Комрат</option>
+				<option value="">Леово</option>
+				<option value="">Хынчешты</option>
+			</select>
+			<label for="departure_village">Выберите город выездов</label>
+			<br><br>
+			<input type="text" placeholder="Ваше имя" minlength="5" maxlength="8" name="name" required>
+			<br><br>
+			<input type="password" placeholder="Ваш пароль" minlength="7" maxlength="10" name="password" required>
+<br><br>
+<textarea name="coments" id="" cols="50" rows="10" placeholder="Ваше сообщение" ></textarea>
+<br>
+<input type="reset">
+<br>
+<input type="hidden" name="time_visit">
+<br>
+<input type="submit">
+<hr>
+<h3>
+	<p>Колличество выездов на объект:</p>
+</h3>
+
+<p>1 выезд - 500 лей</p>
+
+<input type="range" min="0" max="5" step="1" id="quantity_departure">
+<label for="quantity_departure">
+	<p>Расчитать общую сумму по колличеству выездов с помощью ползунка. </p>
+</label>
+</form>
+</main>
+
+</body>
+</html>
