@@ -7,17 +7,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-	rel="stylesheet">
 
 <link rel="icon" href="img/crop-tool_6642182.png" width="10px">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
 	<header>
 		<img src="img/crop-tool_6642182.png" alt="logo" width="100px">
 		<form action="" method="get">
@@ -35,20 +29,22 @@
 	</header>
 
 <main>
-	<h1>InMyHome</h1>
-	<p>Все о дизайне интерьера и экстерьера</p>
-	<p>Свежие идеи и фото</p>
-	<img src="https://i.pinimg.com/originals/0b/57/70/0b57703adcc3e614a04efc97e1d515be.jpg" alt="">
-
-	<p>Самая необыкновенная коллекция дизайна интерьеров, экстерьеров и идей по декору.
-		<br>
-		Множество вдохновляющих фото дизайн-проектов, мебели и различных элементов декора.
-	</p>
+	<div class="cutie">
+	<h1 id="text-introducere">InMyHome</h1>
+	<div class="text-center text-white"><p>Все о дизайне интерьера и экстерьера</p>
+   </div>
+	<p class="text-center text-white">Свежие идеи и фото</p>
+   </div>
+   <div class="text-center">
+   <p>Самая необыкновенная коллекция дизайна интерьеров, экстерьеров и идей по декору.
+	<br>
+	Множество вдохновляющих фото дизайн-проектов, мебели и различных элементов декора.
+   </p>
+	</div>
 <hr>
 	<h2>
    <p>Наши услуги по дизайну интерьера включают в себя следующие этапы:</p>
 	</h2>
-   
 	<ul>
 		<li>
 			<p>Обмер помещений</p>
@@ -78,6 +74,7 @@
 
 	<section>
 		<h2><p>Наши работы</p></h2>
+		<div class="box"></div>
 		<p>Как мы работаем</p>
 		<video src="video/0-02-05-e374a4d8647057067b3e5b1b7ea9b9b45790d7082d450decafa5dec164793f6d_929e50d88fa447e9.mp4" autoplay muted loop height="500px">
 				<source src=".move">
@@ -125,9 +122,3 @@
 </footer>
 </body>
 </html>
-
-<style>
-	body {
-		font-family: "Titillium Web", sans-serif;
-	}
-</style>
