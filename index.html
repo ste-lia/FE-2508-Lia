@@ -13,77 +13,142 @@
 </head>
 <body>
 	<header>
-		<img src="img/crop-tool_6642182.png" alt="logo" width="100px">
-		<form action="" method="get">
-			<input type="search" placeholder="Найти продукцию" name="search">
-		</form>
+		
+		<div class="container box">
+      <img src="img/crop-tool_6642182.png" alt="logo" width="80px">
 		<nav>
-		<a id="main_menu_link_1" href="index.html"><p>-> Главная</p></a>
-		<a id="main_menu_link_2" href="services.html"><p>Услуги</p></a>
-		<a id="main_menu_link_3" href="works.html"><p>Наши работы</p></a>
-		<a id="main_menu_link_4" href="gallery.html"><p>Галерея</p></a>
-		<a id="main_menu_link_5" href="about.html"><p>О нас</p></a>
-		<a id="main_menu_link_6" href="contacte.html"><p>Контакты</p></a>
+			<ul class="menu_list">
+				<li><a class="menu_link" id="main_menu_link_1" href="index.html"><p>-> Главная</p></a></li>
+				<li><a class="menu_link" id="main_menu_link_2" href="services.html"><p>Услуги</p></a></li>
+				<li><a class="menu_link" id="main_menu_link_3" href="works.html"><p>Наши работы</p></a></li>
+				<li><a class="menu_link" id="main_menu_link_4" href="gallery.html"><p>Галерея</p></a></li>
+				<li><a class="menu_link" id="main_menu_link_5" href="about.html"><p>О нас</p></a></li>
+				<li><a class="menu_link" id="main_menu_link_6" href="contacte.html"><p>Контакты</p></a></li>
+			</ul>
 		</nav>
+		<form action="" method="get">
+			<input type="search" placeholder="Найти товар" name="search">
+			<button>Найти</button>
+		</form>
+		</div>
 		<hr>
 	</header>
 
 <main>
+	<section class="main-screen">
 	<div class="cutie">
+		<div class="main_text">
 	<h1 id="text-introducere">InMyHome</h1>
-	<div class="text-center text-white"><p>Все о дизайне интерьера и экстерьера</p>
-   </div>
+	<div class="text-center text-white"><p>Все о дизайне интерьера и экстерьера</p></div>
 	<p class="text-center text-white">Свежие идеи и фото</p>
+		</div>
+
    </div>
-   <div class="text-center">
-   <p>Самая необыкновенная коллекция дизайна интерьеров, экстерьеров и идей по декору.
+   <div class="text-center"><p>Самая необыкновенная коллекция дизайна интерьеров, экстерьеров и идей по декору.
 	<br>
-	Множество вдохновляющих фото дизайн-проектов, мебели и различных элементов декора.
-   </p>
-	</div>
-<hr>
-	<h2>
-   <p>Наши услуги по дизайну интерьера включают в себя следующие этапы:</p>
-	</h2>
-	<ul>
-		<li>
-			<p>Обмер помещений</p>
-		</li>
-		<li>
-			<p>Наброски идей</p>
-		</li>
-		<li>
-			<p>Перепланировка помещений</p>
-		</li>
-		<li>
-			<p>Выбор стиля и декора</p>
-		</li>
-		<li>
-			<p>Визуализация 3D интерьера</p>
-		</li>
-		<li>
-			<p>Подбор материалов</p>
-		</li>
-		<li>
-			<p>Подбор чертежей</p>
-		</li>
-		<li>
-			<p>Авторский надзор</p>
-		</li>
-	</ul>
-
-	<section>
-		<h2><p>Наши работы</p></h2>
-		<div class="box"></div>
-		<p>Как мы работаем</p>
-		<video src="video/0-02-05-e374a4d8647057067b3e5b1b7ea9b9b45790d7082d450decafa5dec164793f6d_929e50d88fa447e9.mp4" autoplay muted loop height="500px">
-				<source src=".move">
-				<source src=".avi">
-				<p>Этот видеоклип не воспроизводится</p>
-		</video>
+	Множество вдохновляющих фото дизайн-проектов, мебели и различных элементов декора.</p></div>
 	</section>
+<hr>
+   <section class="services">
+	<div class="container">
+   <h2><p>Наши услуги</p></h2>
+   <p>Наши услуги по дизайну интерьера включают в себя следующие этапы:</p>
+   <ul>
+	<li>
+		<p>Обмер помещений</p>
+	</li>
+	<li>
+		<p>Наброски идей</p>
+	</li>
+	<li>
+		<p>Перепланировка помещений</p>
+	</li>
+	<li>
+		<p>Выбор стиля и декора</p>
+	</li>
+	<li>
+		<p>Визуализация 3D интерьера</p>
+	</li>
+	<li>
+		<p>Подбор материалов</p>
+	</li>
+	<li>
+		<p>Подбор чертежей</p>
+	</li>
+	<li>
+		<p>Авторский надзор</p>
+	</li>
+   </ul>
+	</div>
+   </section>
 
+	<section class="works">
+		<div class="container">
+		<h2><p>Наши работы</p></h2>
+		<p>Товары, находящиеся в данный момент в шоу-руме</p>
+		<div>
+         <div class="card" id="main_card">
+				<h3><p>Металлические ворота</p></h3>
+				<img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-51-164.jpg" alt="Металлические ворота">
+				<h5 class="price_product">16 000 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</div>
+			<div class="card">
+				<h3>
+					<p>Металлические качели</p>
+				</h3>
+				<img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-50-995.jpg" alt="Металлические качели">
+				<h5 class="price_product">10 000 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</div>
+			<div class="card">
+				<h3>
+					<p>Металлическая лавка</p>
+				</h3>
+				<img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-51-025.jpg" alt="Металлическая лавка">
+				<h5 class="price_product">5 000 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</div>
+
+			<div class="cards_barbeq">
+         <article class="card">
+				<h3><p>Металлический барбекю</p></h3>
+				<div class="img_container">
+            <img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-51-076.jpg" alt="Металлический барбекю">
+				</div>
+				<h5 class="price_product">12 990 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</article>
+			<article class="card">
+				<h3><p>Металлический барбекю</p></h3>
+				<div class="img_container">
+            <img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-51-133.jpg" alt="Металлический барбекю">
+				</div>
+				<h5 class="price_product">8 990 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</article>
+			<article class="card">
+				<h3><p>Металлический барбекю</p></h3>
+				<div class="img_container">
+            <img class="img_card" src="/img/изображение_viber_2025-09-25_14-19-51-278.jpg" alt="Металлический барбекю">
+				</div>
+				<h5 class="price_product">10 990 MDL</h5>
+				<button class="buy_button">заказать</button>
+			</article>
+			</div>
+			
+		</div>
+		<h2><p>Как мы работаем</p></h2>
+		<video src="video/0-02-05-e374a4d8647057067b3e5b1b7ea9b9b45790d7082d450decafa5dec164793f6d_929e50d88fa447e9.mp4"
+			autoplay muted loop height="500px">
+			<source src=".move">
+			<source src=".avi">
+			<p>Этот видеоклип не воспроизводится</p>
+		</video>
+		</div>
+	</section>
 	<hr>
+
 <h2><p>Сотрудничество с другими компаниями</p></h2>
 
 <iframe width="790" height="445" src="https://www.youtube.com/embed/m--4PhzNeMA" title="Конструктор экстерьера Дёке"
@@ -103,22 +168,32 @@
 </main>
 
 <footer>
-<a href="tel:069569286"><p>Звоните по номеру 069569286</p></a>
-<a href="mailto:stefoglolia9@gmail.com"><p>Пишите по адресу stefoglolia9@gmail.com</p></a>
-<a href="contacte.html">Найдете нас по адресу Кагул/Гэвэноаса ул. Пэчий</a>
+<div class="container">
 <h2><p>Узнавайте первыми последние новости и предложения!</p></h2>
-<br>
-<form action="services.html" method="post">
-<input type="checkbox" name="agree" id="checkbox_agree">
-<label for="checkbox_agree"><p>Подписываясь на рассылку, я соглашаюсь с Условиями и положениями, а также Политикой конфиденциальности сайта.</p></label>
-<br>
-	<input type="text" name="e-mail" placeholder="Электронная почта">
+<div class="content_footer">
+<div class="links_footer">
+   <a href="tel:069569286"><p>Звоните по номеру 069569286</p></a>
 	<br>
+   <a href="mailto:stefoglolia9@gmail.com"><p>Пишите по адресу stefoglolia9@gmail.com</p></a>
+	<br>
+   <a href="contacte.html">Найдете нас по адресу Кагул/Гэвэноаса ул. Пэчий</a>
+</div>
+<div class="form_footer">
+<form action="services.html" method="post">
+	<input type="checkbox" name="agree" id="checkbox_agree">
+	<label for="checkbox_agree"><p>Подписываясь на рассылку, я соглашаюсь с Условиями и положениями, а также Политикой конфиденциальности сайта.</p></label>
+	<input type="text" name="e-mail" placeholder="Электронная почта">
+	
 	<input type="password" name="password" id="" placeholder="Пароль:">
 	<br>
-	<button>Зарегестрироваться</button> 
+	<button>Зарегестрироваться</button>
 </form>
-<p>Оставайтесь с нами !</p>
+<h5 class="text_footer"><p>Оставайтесь с нами !</p></h5>
+</div>
+</div>
+	</div>
 </footer>
+<div class="back_to_top">
+</div>
 </body>
 </html>
