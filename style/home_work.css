@@ -1,11 +1,16 @@
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-
-.equals {
+.equals,
+.missing_slice {
 	width: 100vw;
-	height: 600px;
-	margin-top: 80px;
-	padding: 100px;
+	height: 400px;
+	margin: 50px;
+	padding: 50px;
 }
 .sides {
 position: relative;
@@ -30,4 +35,48 @@ gap: 50px;
 .side-two {
 	border-radius: 0 100px 100px 0 ;
 	background-color: #E38F66;
+}
+
+.slices {
+	/* position: relative; */
+	width: 400px;
+	height: 300px;
+	background-color: #E3516E;
+	z-index: 5;
+	/* padding: 100px; */
+	/* display: grid; */
+	/* grid-template-columns: repeat(2, 1fr); */
+	/* display: flex; */
+
+}
+.slices_box {
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.slice {
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+	
+} 
+
+.slice_blue {
+background-color: #51b5a9;
+border-radius: 100% 0 0 0;
+}
+.slice_yelow {
+background-color: #FADE8B;
+border-radius: 0 100% 0 0;
+}
+.slice_white {
+background-color: #F7F3D7;
+border-radius: 0 0 0 100%;
+position: relative;
+/* bottom: -100px; */
+left: -50px;
 }
