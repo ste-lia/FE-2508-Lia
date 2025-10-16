@@ -149,4 +149,56 @@ console.log(true-'2');
 console.log(true-'a');
 
 console.log(true+null);
-console.log(true+undefined)
+console.log(true+undefined);
+
+
+// CONDITIONALII
+// 1. if
+parolaDeLaUser = 'querty';
+parolaDePeServer = 'quert';
+
+if ((username === usernameServer || numberUser === numberServer || emailUser === emailServer) && (parolaDeLaUser === parolaDePeServer)) {
+	console.log('Utilizatorul este autentificat!');
+} else {
+	console.log('Parola sau loghinul sunt incorecte!');
+}
+
+// if-else
+
+	// let temperatura = 18;
+	// let temperatura = 10;
+	// let temperatura = 26;
+	let temperatura = 'Temperature not be provided';
+
+
+	if(temperatura<15) {
+		console.log('Temperatura e mai mica de 15 grade.');
+	} else if(temperatura>=15 && temperatura<=25) {
+		console.log('Temperatura e intre 15 si 25 grade.Timp perfect.');
+	} else if(temperatura>25) {
+		console.log('Temperatura e mai mare de 25 grade.');
+	} else {
+		console.log('Error! Temperatura nu a putut fi afisata!');
+	}
+
+
+
+	// switch -edge-cases
+
+let zi_saptamana = 'Martie'
+
+	switch (zi_saptamana) {
+		case 'Luni':
+			console.log('Prima zi lucratoare saptamanii. Succes!');
+			break;
+		case 'Marti':
+			console.log('A doua zi saptamanii. Lectia 14');
+			break;
+		case 'Sambata':
+		case 'Duminica':
+			console.log('Zi de odihna. Nice Weekend!');
+			break;
+	
+		default:
+			console.log('Nu e o zi.');
+	}
