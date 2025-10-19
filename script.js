@@ -153,7 +153,7 @@ console.log(true+undefined);
 
 
 // CONDITIONALII
-// 1. if
+// 1. if (DACA)
 parolaDeLaUser = 'querty';
 parolaDePeServer = 'quert';
 
@@ -163,7 +163,7 @@ if ((username === usernameServer || numberUser === numberServer || emailUser ===
 	console.log('Parola sau loghinul sunt incorecte!');
 }
 
-// if-else
+// if-else (DACA SI  IN CAZ CONTRAR)
 
 	// let temperatura = 18;
 	// let temperatura = 10;
@@ -183,7 +183,7 @@ if ((username === usernameServer || numberUser === numberServer || emailUser ===
 
 
 
-	// switch -edge-cases
+	// switch -edge-cases   (CAZUL EXCEPTIE)
 
 let zi_saptamana = 'Martie'
 
@@ -202,3 +202,39 @@ let zi_saptamana = 'Martie'
 		default:
 			console.log('Nu e o zi.');
 	}
+
+// --------------------------------------------------------------
+	// CICLURILE ITERATIVE
+
+	// FOR (PENTRU) unde nr de iteratii e definit cunoscut
+
+	for (let i = 1; i<40; i+=4) {
+		console.log(i);
+	}
+
+
+	for (let i = 100; i>0; i--) {
+		console.log(i);
+	}
+
+
+   prenume = 'Lia';
+	console.log(prenume.length);
+
+	for (let i = 0; i<prenume.length; i++) {
+		console.log(prenume[i]);
+	}
+
+// ------------------------------------------------------------------
+// WHILE - CAT TIMP CICLUL ITERATIV UNDE NR DE ITERATII NECUNOSCUT(ex: autentificarea)
+
+// instructiunea 
+alert('Alerta JS!');
+// afiseaza o alerta
+prompt('Introduceti parola!');
+// afiseaza o alerta si input box
+
+let parolaPrompt = prompt ('Introduceti parola!');
+while (parolaPrompt != 'qwerty') {
+	parolaPrompt = prompt('Parola gresita! Introduceti parola!');
+}
