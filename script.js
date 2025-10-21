@@ -227,14 +227,34 @@ let zi_saptamana = 'Martie'
 
 // ------------------------------------------------------------------
 // WHILE - CAT TIMP CICLUL ITERATIV UNDE NR DE ITERATII NECUNOSCUT(ex: autentificarea)
+// (verifica conditia, si daca adevarata executa codul)
 
 // instructiunea 
-alert('Alerta JS!');
-// afiseaza o alerta
-prompt('Introduceti parola!');
-// afiseaza o alerta si input box
+// alert('Alerta JS!');
+// // afiseaza o alerta
+// prompt('Introduceti parola!');
+// // afiseaza o alerta si input box
 
-let parolaPrompt = prompt ('Introduceti parola!');
-while (parolaPrompt != 'qwerty') {
-	parolaPrompt = prompt('Parola gresita! Introduceti parola!');
-}
+// let parolaPrompt = prompt ('Introduceti parola!');
+// while (parolaPrompt != 'qwerty') {
+// 	parolaPrompt = prompt('Parola gresita! Introduceti parola!');
+// }
+
+// ------------------------------------------------------------------------------------------------
+// Lectia 15
+
+// DO-WHILE - (executa codul,dupa asta evalueaza conditia)
+
+// let f = 1000000;
+
+// do {
+// 	console.log(f);
+// } while(i<=10);
+
+
+
+let parolaPrompt;
+
+do {
+	parolaPrompt = prompt('Introduceti parola!');
+} while(parolaPrompt != 'qwerty')
