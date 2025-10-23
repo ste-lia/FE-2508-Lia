@@ -253,8 +253,147 @@ let zi_saptamana = 'Martie'
 
 
 
-let parolaPrompt;
+// let parolaPrompt;
 
-do {
-	parolaPrompt = prompt('Introduceti parola!');
-} while(parolaPrompt != 'qwerty')
+// do {
+// 	parolaPrompt = prompt('Introduceti parola!');
+// } while(parolaPrompt != 'qwerty');
+
+
+// TIPURI DE DATE COMPLEXE
+
+// 1). OBIECT (o colectie de date simple(proprietati))
+
+let masina = {
+	culoare: 'alba',
+	scaune: 5,
+	cutie_automata: false,
+	motor: {
+		cilindri: 5,
+		volum: 2,
+	}
+}
+
+console.log(masina);
+// proprietatile unui obiect
+
+console.log(masina.scaune);
+// o proprietate obiectului
+
+
+// masina.motor = '1.4 l';
+// // adauga proprietate
+// console.log(masina);
+
+
+// delete masina.culoare
+// sterge proprietate
+// console.log(masina);
+
+// console.log(masina.motor.cilindri);
+
+let articol = {
+	title: 'Металлический барбекю',
+	image: '/media/img/изображение_viber_2025-09-25_14-19-51-076.jpg',
+	price: 12990,
+	metainfo: {
+		cantitate: 3,
+		culori: '',
+		etichete: '',
+		reducere: '20%',
+	}
+}
+
+// Ciclul FOR adaptat pentru obiecte:
+for (const proprietate in articol) {
+	console.log(proprietate)
+}
+
+// for (const key in object) {
+// 	if (!Object.hasOwn(object, key)) continue;
+	
+// 	const element = object[key];
+	
+	
+// }
+// ------------------------------------------------------
+// LISTA (Array, Vector)
+let nume1 = 'Den'
+let nume2 = 'Max'
+let nume3 = 'Emma'
+// mai corect din 3 variabile 1 variabila cu 3 valori
+let nume = ['Den', 'Max', 'Emma']
+
+console.log(nume[0]);
+
+// metode ce pot fi aplicate unei liste
+
+nume.push('Lia');
+// adauga un element la capatul unei liste
+console.log(nume);
+
+nume.pop()
+// scoate un element de la capatul unei liste
+console.log(nume);
+
+nume.unshift('Lana');
+// adauga la inceput listei
+console.log(nume);
+
+
+
+nume.reverse();
+// inversa lista
+
+// parcurgem o lista cu ciclul for
+for (let i=0; i<nume.length; i++) {
+	console.log('Welcome,' + nume[i]);
+}
+
+
+// ciclul for-of
+for (const element of nume) {
+	console.log(element)
+}
+
+
+let produse = [
+	{
+		name: 'Металлический барбекю',
+		image: '/media/img/изображение_viber_2025-09-25_14-19-51-076.jpg',
+		price: 12990,
+	},
+	{
+		name: 'Металлический барбекю',
+		image: '/media/img/изображение_viber_2025-09-25_14-19-51-133.jpg',
+		price: 8990,
+	},
+	{
+		name: 'Металлический барбекю',
+		image: '/media/img/изображение_viber_2025-09-25_14-19-51-278.jpg',
+		price: 10990,
+	},
+]
+
+for (const produs of produse) {
+	console.log(produs);
+}
+
+
+
+// ----------------------------------------------------------------
+
+// FUNCTII
+
+// Functiile sunt definite de utilizator   
+
+// Metode predefinite in JavaScript    . ()    (console.log(), nume.unshift('vic'),  
+
+
+function greetUser(nume) {
+	console.log('Hello,' + nume);
+}
+
+for(const name of nume) {
+	greetUser(name);
+}
