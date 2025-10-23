@@ -397,3 +397,16 @@ function greetUser(nume) {
 for(const name of nume) {
 	greetUser(name);
 }
+
+// ------------------------------------------------------------------
+// functiile sunt sabloane pentru a face actiuni repetitive
+// return - intoarce inapoi
+
+
+function getProductPrice(index) {
+return produse[index].price;
+}
+
+let pret_barbeq = getProductPrice(0);
+console.log(pret_barbeq)
+
