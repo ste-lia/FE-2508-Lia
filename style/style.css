@@ -207,7 +207,25 @@ list-style: none;
 	background-color: #4639aa;
 	color: white;
 }
+/* ---------------------------------------- */
 
+/* COD NOU DOM */
+
+.change_img_btn {
+	border-radius: 12px;
+	padding: 10px 20px;
+	border: none;
+	color: white;
+	background-color: #4639aa;
+	cursor: pointer;
+}
+
+.dark_mode {
+	background-color: #453333;
+	color: #faf4ee;
+}
+
+/* -------------------------------------------- */
 .back_to_top {
 	width: 50px;
 	height: 50px;

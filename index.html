@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 		<div class="container box">
       <img src="/media/img/crop-tool_6642182.png" alt="logo" width="80px">
 		<nav>
-			<ul class="menu_list">
+			<ul class="menu_list" id="menu_list">
 				<li><a class="menu_link" id="main_menu_link_1" href="/index.html"><p>-> Главная</p></a></li>
 				<li><a class="menu_link" id="main_menu_link_2" href="/pages/services.html"><p>Услуги</p></a></li>
 				<li><a class="menu_link" id="main_menu_link_3" href="/pages/works.html"><p>Наши работы</p></a></li>
@@ -28,6 +28,7 @@
 				<li><a class="menu_link" id="main_menu_link_6" href="/pages/contacte.html"><p>Контакты</p></a></li>
 				<li><a class="menu_link" id="main_menu_link_7" href="/pages/video_fullscreen.html"><p>Сварщик InMyHome</p></a></li>
 				<li><a class="menu_link" id="main_menu_link_8" href="/pages/home_work.html"><p>home_work</p></a></li>
+				<button onclick="darkMode()" id="dark_mode_btn">Dark Mode</button>
 			</ul>
 		</nav>
 		<form action="" method="get">
@@ -83,19 +84,19 @@
 
 	<section class="works">
 		<div class="container">
-		<h2><p>Наши работы</p></h2>
-		<p>Товары, находящиеся в данный момент в шоу-руме</p>
+		<h2 id="title_shop"><p>Наши работы</p></h2>
+		<p id="ex_paragraph">Товары, находящиеся в данный момент в шоу-руме</p>
 		<div class="cards">
 			<div class="cards_mix">
             <div class="card" id="main_card">
 				<h3><p>Металлические ворота</p></h3>
-				<img class="img_card" src="/media/img/изображение_viber_2025-09-25_14-19-51-164.jpg" alt="Металлические ворота">
+				<img id="img_gates" class="img_card"  src="/media/img/изображение_viber_2025-09-25_14-19-51-164.jpg" alt="Металлические ворота">
 				<h5 class="price_product">16 999 MDL</h5>
 				<button class="buy_button">заказать</button>
 			</div>
 			<div class="card">
 				<h3><p>Металлические качели</p></h3>
-				<img class="img_card" src="/media/img/изображение_viber_2025-09-25_14-19-50-995.jpg" alt="Металлические качели">
+				<img id="img_swing" class="img_card" src="/media/img/изображение_viber_2025-09-25_14-19-50-995.jpg" alt="Металлические качели">
 				<h5 class="price_product">10 999 MDL</h5>
 				<button class="buy_button">заказать</button>
 			</div>
@@ -112,7 +113,8 @@
 				<button class="buy_button">заказать</button>
 			</div>
 			</div>
-         
+
+         <button id="change_img_btn" onclick="changeImage()">Change image</button>
 
 			<div class="cards_barbeq">
          <article class="card">
