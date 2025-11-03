@@ -91,8 +91,14 @@ change_img_btn.classList.add('change_img_btn');
 let dark_mode_btn = document.querySelector('#dark_mode_btn');
 function darkMode() {
 	if (document.body.classList.contains('dark_mode')) {
+
+		localStorage.setItem('darkMode', 'false')
+
 		dark_mode_btn.textContent = 'Dark Mode'
 	} else {
+
+		localStorage.setItem('darkMode', 'true')
+
 		dark_mode_btn.textContent = 'Light Mode'
 	}
 	document.body.classList.toggle('dark_mode');
@@ -222,3 +228,32 @@ let card = createProductCard(produs)
 contain.insertAdjacentElement('beforeend', card);
 
 }
+
+// ====================================================================
+// STORAGE - spatiu de stocare inform care se foloseste pentru functionalitatilor de preferinte
+// LOCALSTORAGE - stocarea datelor subforma de variabile
+
+// setarea unei valori - .setItem
+// localStorage.setItem('limba','engleza')
+
+// preluarea unei valori - .getItem
+console.log(localStorage.getItem('limba'));
+
+// localStorage se scrie la inceputul paginii
+
+// localStorage.setItem('darkMode', 'true');
+// localStorage.getItem('darkMode');
+
+
+// let dark_mode_btn = document.querySelector('#dark_mode_btn');
+
+if (localStorage.getItem('darkMode') === 'true') {
+	document.body.classList.toggle('darkMode');
+	dark_mode_btn.textContent = 'Light Mode';
+}
+
+localStorage.removeItem('limba');
+
+sessionStorage.setItem('temporar', 'Lia');
+
+document.cookie = "yummy_cookie=chokolate";
