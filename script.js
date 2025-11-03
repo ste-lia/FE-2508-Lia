@@ -257,3 +257,24 @@ localStorage.removeItem('limba');
 sessionStorage.setItem('temporar', 'Lia');
 
 document.cookie = "yummy_cookie=chokolate";
+
+// ----------------------------------------------------------
+// Arrow functions
+function greetUser(nume) {
+	return 'Hello ' + nume;
+}
+
+let greetUser2 = nume => 'Hello ' + nume
+
+console.log(greetUser('Lia'));
+console.log(greetUser2('Lia'));
+
+// -------------------------------------------------------------
+// EVENIMENTE
+// document.addEventListener('click');
+
+let card = document.querySelector('.card');
+
+card.addEventListener('click', function() {
+	alert('Card apasat');
+})
