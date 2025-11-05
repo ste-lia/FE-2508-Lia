@@ -1,3 +1,18 @@
 .card:first-child {
 	background-color: #4639aa9a;
 }
+
+.menu {
+	height: 100vh;
+	width: 300px;
+	background-color: #4639aa6a;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: -300px;
+	transition: all 1s;
+}
+
+.menu_activ {
+	left: 0;
+}

@@ -13,8 +13,8 @@ console.log(document);
 // 1.Preluarea elementelor
 
 // 1.1.Dupa id
-let menu = document.getElementById('menu_list');
-console.log(menu);
+// let menu = document.getElementById('menu_list');
+// console.log(menu);
 
 // 1.2. -clasa
 let cards = document.getElementsByClassName('card');
@@ -276,5 +276,42 @@ console.log(greetUser2('Lia'));
 let card = document.querySelector('.card');
 
 card.addEventListener('click', function() {
-	alert('Card apasat');
+	alert('Card apasat')
+});
+// ------------------------------------------------------------
+let contact_email = document.querySelector('#contact_email');
+let text_email = document.querySelector('#text_email');
+
+// contact_email.addEventListener('input', function() {
+//    text_email.textContent = contact_email.value
+// })
+
+contact_email.addEventListener('input', () => text_email.textContent = contact_email.value.length + " caractere")
+
+// window.addEventListener('mousemove', () => console.log('Mouse miscat'))
+// window.addEventListener('mousemove', (event) => console.log(event))
+let mouse_info = document.querySelector('#mouse_info');
+let menu = document.querySelector('.menu')
+
+window.addEventListener('mousemove', (event) => {
+   mouse_info.textContent = "X: " + event.x + " y: " + event.y
+
+   if (event.x < 20) {
+		menu.classList.add('menu_activ')
+	}
+	if (event.x > 300) {
+		menu.classList.remove('menu_activ')
+	}
+})
+
+let form__contact = document.querySelector('.form__contact');
+
+form__contact.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	setTimeout(() => {
+		alert('Запрос отправлен!')
+	}, 3000
+
+	)
 })
