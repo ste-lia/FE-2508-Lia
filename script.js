@@ -311,7 +311,5 @@ form__contact.addEventListener('submit', (event) => {
 
 	setTimeout(() => {
 		alert('Запрос отправлен!')
-	}, 3000
-
-	)
-})
+	}, 3000)
+});
