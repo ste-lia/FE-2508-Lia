@@ -304,9 +304,9 @@ window.addEventListener('mousemove', (event) => {
 	}
 })
 
-let form__contact = document.querySelector('.form__contact');
+let form_contact = document.querySelector('.form_contact');
 
-form__contact.addEventListener('submit', (event) => {
+form_contact.addEventListener('submit', (event) => {
 	event.preventDefault();
 
 	setTimeout(() => {
