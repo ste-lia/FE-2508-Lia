@@ -1,4 +1,14 @@
 
+cart = {}
+
+let cartFromStorage = localStorage.getItem('cart');
+
+if (cartFromStorage) {
+	cart = JSON.parse(cartFromStorage)
+}
+
+updateDOM()
+
 // cart = [
 // 	{
 // 		name: 'Металлический барбекю на колёсах',
@@ -48,7 +58,7 @@
 // 	}
 // }
 // obiect[proprietate]
-cart = {}
+
 
 function addProduct(product, price){
 	if (cart[product] != null) {
@@ -77,10 +87,40 @@ function updateDOM () {
    let cartList = document.querySelector('.shoppingCart');
 	cartList.innerHTML = "";
 
-	for (let produs in cart) {
-		let listItem = document.createElement('li');
-		listItem.textContent = produs + ": " + cart[produs].quantity + "unitati";
+	let totalPrice = 0
 
+	for (let product in cart) {
+		let listItem = document.createElement('li');
+		listItem.textContent = product + ": " + cart[product].quantity + "unitati";
+      
+		let totalProductPrice = cart[product].price * cart[product].quantity;
+		listItem.textContent += ". " + totalProductPrice + " lei. "
+
+		let removeButton = document.createElement('button');
+		removeButton.textContent = 'Sterge Unitate';
+
+		removeButton.onclick = function() {
+			deleteProduct(product)
+		}
+		// removeButton.addEventListener('click',deleteProduct)
+
+		listItem.insertAdjacentElement('beforeend', removeButton);
 		cartList.insertAdjacentElement('beforeend', listItem)
+
+		totalPrice += totalProductPrice
 	}
+
+	let price = document.querySelector(".price");
+	price.textContent = "Pret total: " + totalPrice + " lei."
+
+
+	localStorage.setItem('cart', JSON.stringify(cart))
+}
+
+
+
+function resetCart() {
+	cart = {}
+
+	updateDOM();
 }
