@@ -93,17 +93,17 @@
 
 	<section class="works">
 		<div class="container">
-		<h2 id="title_shop"><p>Наши работы</p></h2>
+		<h2 id="title_shop"><p>Наши работы:</p></h2>
 		<p id="ex_paragraph">Товары, находящиеся в данный момент в шоу-руме</p>
 		<div class="cards">
-			<div class="cards_mix">
-            <div class="card" id="main_card">
+			<!-- <div class="cards_mix"> -->
+            <!-- <div class="card" id="main_card">
 				<h3><p>Металлические ворота</p></h3>
 				<img id="img_gates" class="img_card"  src="/media/img/изображение_viber_2025-09-25_14-19-51-164.jpg" alt="Металлические ворота">
 				<h5 class="price_product">16 999 MDL</h5>
 				<button class="buy_button">заказать</button>
-			</div>
-			<div class="card">
+			</div> -->
+		<!--	<div class="card">
 				<h3><p>Металлические качели</p></h3>
 				<img id="img_swing" class="img_card" src="/media/img/изображение_viber_2025-09-25_14-19-50-995.jpg" alt="Металлические качели">
 				<h5 class="price_product">10 999 MDL</h5>
@@ -120,12 +120,11 @@
 				<img class="img_card" src="/media/img/изображение_viber_2025-09-25_14-36-11-601.jpg" alt="Металлический стеллаж">
 				<h5 class="price_product">8 999 MDL</h5>
 				<button class="buy_button">заказать</button>
-			</div>
-			</div>
+			</div> -->
 
-         <button id="change_img_btn" onclick="changeImage()">Change image</button>
+         <!-- <button id="change_img_btn" onclick="changeImage()">Change image</button> -->
 
-			<div class="cards_barbeq">
+			<!-- <div class="cards_barbeq">
          <article class="card">
 				<h3><p>Металлический барбекю</p></h3>
 				<div class="img_container">
@@ -150,23 +149,35 @@
 				<h5 class="price_product">10 990 MDL</h5>
 				<button class="buy_button">заказать</button>
 			</article>
+			</div> -->
 			</div>
-<!-- --------------------------------------- -->
-			<section class="exemple_insert">
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex doloremque reprehenderit incidunt quisquam ea dolorem commodi veritatis iusto qui suscipit. Voluptatum, iste temporibus eius nulla expedita adipisci et! Maxime, explicabo.</p>
-			</section>
-<!-- --------------------------------------- -->
-<section class="contain">
 
+<section>
+		<ul class="productList">
+		<li><p>barbequ <button onclick="addProduct('barbequ', 12990)">Добавить в корзину</button></p></li>
+		<li><p>Ворота <button onclick="addProduct('poarta', 16999)">Добавить в корзину</button></p></li>
+		<li><p>Лавка <button onclick="addProduct('scaun', 5999)">Добавить в корзину</button></p></li>
+	</ul>
+	
+	<hr>
+
+	<h1>Shopping cart:</h1>
+
+	<ul class="shoppingCart"></ul>
+
+	<h3 class="price">Итоговая сумма:</h3>
+
+	<hr>
+
+	<button onclick="resetCart()">Очистить корзину</button>
 </section>
-<!-- --------------------------------------- -->
 
+<section class="contain"></section>
 
+</div>
+</section> 
 
-
-
-<!-- ================================================ -->
-		</div>
+<section> 
 		<h2><p>Как мы работаем</p></h2>
 		<video src="./media/video/0-02-05-e374a4d8647057067b3e5b1b7ea9b9b45790d7082d450decafa5dec164793f6d_929e50d88fa447e9.mp4"
 			autoplay muted loop height="500px">
@@ -174,9 +185,11 @@
 			<source src=".avi">
 			<p>Этот видеоклип не воспроизводится</p>
 		</video>
-		</div>
-	</section>
+</section>
+
 	<hr>
+
+<section>
 
 <h2><p>Сотрудничество с другими компаниями</p></h2>
 
@@ -194,6 +207,9 @@
 <a href="https://www.houzz.ru/" target="_blank">Узнать больше</a>
 <br>
 <a href="#main_menu_link_1">Вернуться на главную</a>
+
+</section>
+
 </main>
 
 <footer>
@@ -225,11 +241,12 @@
 </div>
 	</div>
 </footer>
+
 <div class="back_to_top"><a href="index.html"></a></div>
+
 </body>
 </html>
 
-<script src="/script.js">
-
-</script>
+<script src="/script.js"></script>
+<script src="/script_cart.js"></script>
 

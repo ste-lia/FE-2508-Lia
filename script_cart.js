@@ -9,56 +9,6 @@ if (cartFromStorage) {
 
 updateDOM()
 
-// cart = [
-// 	{
-// 		name: 'Металлический барбекю на колёсах',
-// 		quantity: 2,
-// 		price: 12990
-// 	}
-// ]
-
-// // daca product e un string
-// // (o lista)
-// cart = []
-
-// function addProduct(product, price){
-// if (cart.product != null) {
-// 	cart.product.quantity++;
-// } else {
-// 	cart.push({product, price, quantity:1})
-// }
-// }
-
-// // function changeQuantity(product) {
-
-// // }
-
-// function deleteProduct(product) {
-//    if (cart.product.quantity > 1) {
-// 		cart.product.quantity -= 1;
-// 	} else {
-
-// 	}
-// }
-
-// ---------------------------simplificam----------
-// daca cart e un obiect
-// cart = {
-// 	barbequ : {
-// 		quantity:,
-// 		price:
-// 	},
-// 	poarta : {
-// 		quantity:,
-// 		price:
-// 	},
-// 	scaun : {
-// 		quantity:,
-// 		price:
-// 	}
-// }
-// obiect[proprietate]
-
 
 function addProduct(product, price){
 	if (cart[product] != null) {
@@ -70,7 +20,6 @@ function addProduct(product, price){
 	}
 
 	updateDOM()
-	console.log(cart);
 }
 
 function deleteProduct(product) {
@@ -97,12 +46,11 @@ function updateDOM () {
 		listItem.textContent += ". " + totalProductPrice + " lei. "
 
 		let removeButton = document.createElement('button');
-		removeButton.textContent = 'Sterge Unitate';
+		removeButton.textContent = 'Удалить одну единицу';
 
-		removeButton.onclick = function() {
+		removeButton.addEventListener('click', () => {
 			deleteProduct(product)
-		}
-		// removeButton.addEventListener('click',deleteProduct)
+		})
 
 		listItem.insertAdjacentElement('beforeend', removeButton);
 		cartList.insertAdjacentElement('beforeend', listItem)
@@ -111,7 +59,7 @@ function updateDOM () {
 	}
 
 	let price = document.querySelector(".price");
-	price.textContent = "Pret total: " + totalPrice + " lei."
+	price.textContent = "Итоговая сумма: " + totalPrice + " lei."
 
 
 	localStorage.setItem('cart', JSON.stringify(cart))
